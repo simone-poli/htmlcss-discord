@@ -100,10 +100,42 @@ button{
 }
 /*Main section*/
 
+div#jumbotron h1{
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.jumbo-main{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
 #jumbotron{
     margin: 0 auto;
     height: 100%;
     width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.download-btn, .broswer-btn{
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.broswer-btn{
+    background-color: #23272A;
+    color: white;
 }
 
 .main-cnt{
