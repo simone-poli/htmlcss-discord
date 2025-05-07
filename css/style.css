@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*utilities*/
 :root{
     --header-bg-color: #3161E0;
@@ -22,6 +23,7 @@
 .general-cnt{
     width: 70%;
     margin: 0 auto;
+    display: flex;
 }
 
 .bg-blue{
@@ -105,7 +107,7 @@ div#jumbotron h1{
     padding-bottom: 25px;
 }
 
-p{
+div#jumbotron p{
     font-size: 20px;
     padding: 10px 0;
 }
@@ -123,6 +125,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 
@@ -143,14 +146,17 @@ p{
     display: flex;
 }
 
+div.column-right h1{
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
 .column-left{
     width: 70%;
-    background-color: var(--main-bg-pink);
+    
 }
 
 .column-right{
     width: 30%;
-    background-color: var(--main-bg-azul);
 }
 
 .big-cnt{
@@ -163,6 +169,16 @@ p{
     height: 100%;
     background-color: var(--main-bg-green);
 }
+
+div>img{
+    height: 100%;
+}
+
+div.column-left #voice-con{
+    width: 100%;
+   padding-left: 130px;
+}
+
 
 /*footer section*/
 
