@@ -8,13 +8,10 @@
 /*utilities*/
 :root{
     --header-bg-color: #3161E0;
-    --main-bg-blue: #00008B;
     --main-bg-grey: #D3D3D3;
-    --main-bg-pink: #EE82EE;
-    --main-bg-azul: #1E90FF;
-    --main-bg-green: green;
+    --color-use: #7c94e1;
     --footer-bg-black: #23272A;
-    --footer-bg-aqua: #7FFFD4;
+ 
 }
 
 .debug{
@@ -30,9 +27,7 @@
     background-color: var(--main-bg-blue);
 }
 
-.bg-grey{
-    background-color: var(--main-bg-grey);
-}
+
 
 .bg-pink{
     background-color: var(--main-bg-pink) ;
@@ -83,7 +78,7 @@ nav{
     text-align: right;
 }
 
-ul{
+nav>ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -91,7 +86,7 @@ ul{
     font-size: 18px ;
 }
 
-li{
+nav>ul>li{
     cursor: pointer;
 }
 
@@ -178,7 +173,7 @@ div.column-left #voice-con{
 }
 
 div.big-cnt button{
-    background-color: #7c94e1;
+    background-color: var(--color-use);
     color: white;
 }
 h3{
@@ -190,13 +185,14 @@ h3{
 
 .footer-cnt{
     background-color: var(--footer-bg-black);
-    height: 400px;
+    min-height: 400px;
     padding: 5px 30px 15px;
 }
 
 .footer-column{
     display: flex;
     height: 100%;
+    padding: 35px;
 }
 
 .column{
@@ -210,6 +206,29 @@ h3{
     flex-grow: 2;
 }
 
+div.column ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.column ul li:not(:first-child){
+    color: white;
+}
+li>h1, h4{
+    color: var(--color-use);
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+li>img{
+   height: 1em;
+}
 #footer-nav{
     background-color: var(--footer-bg-black);
     height: 70px;
