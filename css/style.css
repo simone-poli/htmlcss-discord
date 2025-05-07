@@ -8,7 +8,6 @@
 /*utilities*/
 :root{
     --header-bg-color: #3161E0;
-    --main-bg-grey: #D3D3D3;
     --color-use: #7c94e1;
     --footer-bg-black: #23272A;
  
@@ -23,19 +22,6 @@
     display: flex;
 }
 
-.bg-blue{
-    background-color: var(--main-bg-blue);
-}
-
-
-
-.bg-pink{
-    background-color: var(--main-bg-pink) ;
-}
-
-.bg-azul{
-    background-color: var(--main-bg-azul);
-}
 
 .container{
     height: 400px;
@@ -172,7 +158,7 @@ div.column-left #voice-con{
    padding-left: 130px;
 }
 
-div.big-cnt button{
+div.big-cnt button, div.footer-pd button{
     background-color: var(--color-use);
     color: white;
 }
